@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <title>Progressive enhancement | dsreitan.github.io</title>
+</head>
+
+<body>
+  <h1>Progressive enhancement means adding extra features with JavaScript, but making sure the site still works without
+    it.</h1>
+
+  <h2>Relative time</h2>
+  <p>Turn static date into a dynamic X Y since/to diff from current date</p>
+  <pre>improvements: format param</pre>
+  <relative-time>
+    <time datetime="2021-09-01T12:00:00Z" lang="en">September 1st, 2021</time>
+  </relative-time>
+
+  <h2>Ajax form</h2>
+  <p>Turn native MPA form into Ajax SPA form</p>
+  <pre>improvements: callback with data in dialog</pre>
+  <ajax-form>
+    <form method="post" action="https://httpbin.org/post">
+      <input type="text" name="name" value="John Doe" />
+      <input type="submit" />
+    </form>
+  </ajax-form>
+
+  <h2>Dialog plus TODO</h2>
+  <p>animation, close, outside click, onClose callback, <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog">MDN link</a></p>
+
+  <button commandfor="mydialog" command="show-modal">Show modal in Chrome with `command`</button>
+  <button onclick="mydialog.showModal()">Show modal with js</button>
+  <dialog id="mydialog">
+    <button commandfor="mydialog" command="close">Close in Chrome with `command`</button>
+    <button onclick="mydialog.close()">Close with js</button>
+    <form method="dialog">
+      <button>Close with form</button>
+    </form>
+    Dialog Content
+  </dialog>
+
+  <h2>Floating label?</h2>
+
+  <h2><copy-to-clipboard> — Wraps content with a “copy” button and optional feedback tooltip.</h2>
+
+  <h2><color-picker> — Native <input type="color"> but prettier, with palette and eyedropper support.</h2>
+
+  <h2><responsive-video> — Embeds video (YouTube/Vimeo/self-hosted) with responsive container and lazy loading.</h2>
+
+  <h2><image-compare> — Before/after slider for comparing two images.</h2>
+
+  <h2><audio-visualizer> — Plays audio and shows animated waveform or spectrum.</h2>
+
+  <h2>
+    <tooltip> — Simple, lightweight tooltip with positioning logic and a11y support.
+  </h2>
+
+  <h2><qr-code> — Generates a QR code from given text.</h2>
+
+  <h2><lazy-img> — Image loader with placeholder + fade-in effect.</h2>
+
+  <script src="relative-time.js"></script>
+  <script src="ajax-form.js"></script>
+  <script src="dialog-plus.js"></script>
+
+</body>
+
+</html>
